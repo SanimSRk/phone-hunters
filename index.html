@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phone Hunter</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+  <header>
+
+  </header>
+  <main>
+    <section class="w-[85%] mx-auto">
+      <div class="bg-gray-100 p-4 m-4">
+        <input id="inputAreyas" type="text" placeholder="Search...."
+          class="input input-bordered w-full max-w-xs text-xl" />
+        <button onclick="buttonHendlor()" class="btn btn-accent text-white text-xl">Search</button>
+      </div>
+    </section>
+    <section class="w-[85%] mx-auto ">
+      <div id="loadingSpinners" class=" hidden text-center my-44">
+        <span class="loading loading-spinner loading-lg"></span>
+      </div>
+      <div id="phonesCards" class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 text-center  ">
+
+      </div>
+      <div id="seeMorezbtn" class="hidden flex justify-center my-7">
+        <button class="btn  btn-accent text-white text-xl">See More</button>
+      </div>
+    </section>
+    <section>
+      <!-- Open the modal using ID.showModal() method -->
+
+      <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+
+          <div id="show-detalis-contners">
+
+          </div>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+  <script src="phone.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
